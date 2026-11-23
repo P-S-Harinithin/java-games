@@ -1,0 +1,23 @@
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      Random rn =new Random();
+      int n=rn.nextInt(100);
+      int user;
+      do{
+         user=sc.nextInt();
+          if(user>n){
+          System.out.print("lower");
+        }
+        else if(user<n){
+           System.out.print("higher");
+        }
+        else{
+          System.out.print("Got it man");
+        }
+      }
+     while(n!=user);
+    }
+}
